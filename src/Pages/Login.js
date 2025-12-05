@@ -36,16 +36,16 @@ function Login() {
     return (
         <>
         <Header/>
-        <div className=" d-flex  bg-primary justify-content-center align-items-center vh-100">
+        <div className=" d-flex bg-secondary bg-gradient justify-content-center align-items-center vh-100">
             <div className="w-25 bg-white ">
-                <h2> Sign in</h2>
+                <h2> Se Connecter</h2>
                 <form action="" className="mb-2" onSubmit={handleSubmit}>
-                <InputField label="Email" type="email" name="email" placeholder="Enter your email address"  handleChange={handleInput}/>
-                <InputField label="Mot de passe" type="password" name="password" placeholder="Enter your password"  handleChange={handleInput} />
-                <button className="btn btn-success w-100">Submit</button>
+                <InputField label="Email" type="email" name="email" placeholder="Entrer votre adresse email"  handleChange={handleInput}/>
+                <InputField label="Mot de passe" type="password" name="password" placeholder="Entrer votre mot de passe"  handleChange={handleInput} />
+                <button className="btn btn-success w-100">Soumettre</button>
                 </form>
-                <p> Not yet have an account ?</p>
-                <Link to="/Registrer" className="btn btn-default border w-100 bg-light text-decoration-none"> register</Link>
+                <p> Vous n'avez pas de compte ?</p>
+                <Link to="/Registrer" className="btn btn-default border w-100 bg-light text-decoration-none"> S'inscrire</Link>
             </div>
         </div>
         <Footer/>

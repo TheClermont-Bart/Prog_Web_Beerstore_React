@@ -28,18 +28,18 @@ function Register() {
     return (
         <>
         <Header/>
-        <div className=" d-flex justify-content-center align-items-center vh-100">
+        <div className=" d-flex bg-secondary bg-gradient justify-content-center align-items-center vh-100">
             <div className="w-25 bg-white">
-                <h2> Sign up</h2>
+                <h2> Inscription</h2>
                 <form action="" onSubmit={handleSubmit}>
-                    <InputField label="Nom complet" type="text" name="fulname" placeholder="Enter your fullname" />
-                   <InputField label="Email" type="email" name="email" placeholder="Enter your email address" handleChange={handleInput}/>
-                   <InputField label="Mot de passe" type="password" name="password" placeholder="Enter your password" handleChange={handleInput}/>
-                    <InputField label="Mot de passe de confirmation" type="repeated_password" name="repeated_password" placeholder="Confirmez le mot de passe" />
-                    <button className="btn btn-success w-100">Submit</button>
+                    <InputField label="Nom complet" type="text" name="fulname" placeholder="Entrer votre nom complet" />
+                   <InputField label="Email" type="email" name="email" placeholder="Entrer votre adresse email" handleChange={handleInput}/>
+                   <InputField label="Mot de passe" type="password" name="password" placeholder="Entrer votre mot de passe" handleChange={handleInput}/>
+                    <InputField label="Mot de passe de confirmation" type="password" name="repeated_password" placeholder="Confirmez le mot de passe" />
+                    <button className="btn btn-success w-100">Soumettre</button>
                 </form>
-                 <p> Already have an account ?</p>
-                <Link to="/Login" className="btn btn-default border w-100 bg-light text-decoration-none"> login</Link>
+                 <p> Vous avez deja un compte ?</p>
+                <Link to="/Login" className="btn btn-default border w-100 bg-light text-decoration-none"> Se Connecter</Link>
             </div>
         </div>
         <Footer/>
