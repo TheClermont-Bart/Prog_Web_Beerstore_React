@@ -11,6 +11,7 @@ import Modalites from "./Pages/Modalites"
 import About from "./Pages/About"
 import Login from "./Pages/Login"
 import Registrer from "./Pages/Register"
+import Ventes from './Pages/Vente';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         <Route path='/About' element={<About/>}> </Route>
         <Route path='/Login' element={<Login/>}> </Route>
         <Route path='/Registrer' element={<Registrer/>}> </Route>
+        <Route path='/ventes' element={<Ventes/>}> </Route>
       </Routes>
     </BrowserRouter>
 
