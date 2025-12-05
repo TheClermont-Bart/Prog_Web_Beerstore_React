@@ -1,6 +1,7 @@
 const express = require("express");
 const mysql = require("mysql");
 const cors = require("cors");
+const { createProduct } = require("./routes/product");
 
 
 const app = express();
@@ -13,7 +14,9 @@ const db = mysql.createConnection({
     user : "root",
     password : "",
     database : "ecommerce"
+
 });
+app.post("/product",createProduct)
 
 app.post("/signin", (req, res) => {
     const sql = "SELECT * FROM users WHERE email=? AND password=?";

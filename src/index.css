@@ -20,10 +20,10 @@ a:hover {
 }
 
 .slide {
-  height: 50vh;     /* 30% de la hauteur de l'écran */
-  width: 100%;      /* pleine largeur */
-  object-fit: cover; /* pour éviter les déformations */
-  display: none;     /* géré par ton JS */
+  height: 50vh;   
+  width: 100%;     
+  object-fit: cover; 
+  display: none;    
 }
 
 .butContainer {
@@ -52,7 +52,7 @@ a:hover {
 }
 
 footer {
-  background-image: url('Assets/bckg-footer.jpg');
+  background-image: url('Assets/Wood.png');
   height: 20vh;
 }
 
@@ -63,7 +63,7 @@ footer {
 }
 
 .page-content {
-  padding-top: 150px; /* ajuste selon la hauteur réelle du logo/nav */
+  padding-top: 150px;
 }
 
 .map{
@@ -73,5 +73,23 @@ footer {
 }
 
 .page-content {
-  padding-top: 150px; /* ajuste selon la hauteur réelle du logo/nav */
+  padding-top: 150px; 
+}
+
+.navbar {
+  background-image: url('Assets/Wood.png');
+}
+
+.nav-item {
+  font :bold;
+}
+
+.about {
+  background-image: url('Assets/motif.png');
+  color:azure;
+}
+
+.VenteBackground {
+  background-image: url('Assets/motif.png');
+  color:azure;
 }

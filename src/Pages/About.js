@@ -6,6 +6,7 @@ export default function About() {
     return(
             <>
             <Header/>
+            <section className="about">
             <h1>A Propos</h1>
                 <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. 
@@ -27,6 +28,7 @@ export default function About() {
                     <div className="col-6"><img className="img-fluid" src={Fut} alt=""/></div>
                 </div>
             </div>
+            </section>
             <Footer/>
             </>
 )}
